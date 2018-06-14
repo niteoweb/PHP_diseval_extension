@@ -1,0 +1,15 @@
+schemaVersion: '2.0.0'
+commandTests:
+- name: 'whoami'
+  command: 'whoami'
+  expectedOutput: ['root']
+  excludedOutput: ['www-data']
+- name: 'file owner'
+  command: 'ls'
+  args: ['-l', '/var/www']
+  expectedOutput: ['.*www-data.*']
+  excludedOutput: ['.*root.*']
+- name: 'PHP'
+  command: 'php'
+  args: ['--version']
+  expectedOutput: ['.*PHP 7.2.*']

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Basic essentials
+
+apt update
+apt install locales apt-utils wget gnupg2 less make build-essential -y
+locale-gen en_US.UTF-8  

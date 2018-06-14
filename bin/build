@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Fail fast and fail hard.
+set -eo pipefail
+
+export DEBIAN_FRONTEND=noninteractive
+BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
+
+# shellcheck source=bin/utils/add-ppa
+source "$BIN_DIR/utils/add-ppa"
+
+# Essentails.
+# shellcheck source=bin/steps/setup
+source "$BIN_DIR/steps/setup"
+
+# Essentails.
+# shellcheck source=bin/steps/setup
+source "$BIN_DIR/steps/php"

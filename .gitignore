@@ -1,0 +1,5 @@
+.env
+bin/container-builder-local
+bin/container-structure-test
+bin/docklint
+diseval.so

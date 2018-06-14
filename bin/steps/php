@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Compile and install PHP
+
+add-ppa-repository ondrej/php
+apt install php7.2-dev -y --force-yes

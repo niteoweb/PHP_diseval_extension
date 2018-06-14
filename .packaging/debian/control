@@ -1,0 +1,9 @@
+Package: php7.2-diseval
+Version: REP_VERSION
+Recommends: lsb-release
+Section: net
+Priority: optional
+Architecture: amd64
+Depends: apache2, php7.2-cli
+Maintainer: Janez Troha <janez.troha@niteoweb.com>
+Description: Disable eval in php7.2.

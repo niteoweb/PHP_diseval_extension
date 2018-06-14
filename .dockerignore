@@ -1,0 +1,6 @@
+.git/
+.env
+bin/container-builder-local
+bin/container-structure-test
+bin/docklint
+bin/test
